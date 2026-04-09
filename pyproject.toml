@@ -1,0 +1,10 @@
+[project]
+name = "opencat-gym"
+version = "0.1.0"
+description = "A gym reinforcement learning environment for OpenCat robots based on Stable-Baselines3 and PyBullet."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "stable-baselines3[extra]",
+    "pybullet",
+]

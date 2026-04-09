@@ -5,19 +5,18 @@ A gym reinforcement learning environment for OpenCat robots based on Stable-Base
 <img src=animations/trained_agent_playground.gif width="400" /> <img src=animations/application.gif width="400" />
 
 ## Installation and Usage
-Install python packages:
-``` python
-!pip install "stable-baselines3[extra]"
-!pip install pybullet
+Install dependencies with [uv](https://docs.astral.sh/uv/):
+```
+uv sync
 ```
 
 Start training with 
 ``` 
-python train.py 
+uv run python train.py 
 ```
 To take a look at the pre-trained example, execute 
 ``` 
-python enjoy.py
+uv run python enjoy.py
 ```
 Alternatively you can run [`opencat-gym.ipyn`](https://github.com/ger01d/opencat-gym/blob/main/opencat-gym.ipynb) in Jupyter notebook and perform training.
 
