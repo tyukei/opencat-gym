@@ -5,7 +5,7 @@ import pybullet_data
 
 
 # Constants to define training and visualisation.
-GUI_MODE = False          # Set "True" to display pybullet in a window
+GUI_MODE = True          # Set "True" to display pybullet in a window
 EPISODE_LENGTH = 250      # Number of steps for one training episode
 MAXIMUM_LENGTH = 1.8e6    # Number of total steps for entire training
 
