@@ -10,6 +10,12 @@ Install dependencies with [uv](https://docs.astral.sh/uv/):
 uv sync
 ```
 
+> **macOS note:** If `pybullet` fails to build, set the following environment variables before running `uv sync`:
+> ```
+> export CFLAGS="-Dfdopen=fdopen -isysroot $(xcrun --sdk macosx --show-sdk-path)"
+> export CXXFLAGS="-Dfdopen=fdopen -isysroot $(xcrun --sdk macosx --show-sdk-path)"
+> ```
+
 Start training with 
 ``` 
 uv run python train.py 
